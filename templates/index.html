@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C to MIPS Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>C to MIPS Assembly Converter</h1>
+        <form action="/" method="POST">
+            <div class="form-container">
+                <div class="code-box">
+                    <h2>C Code:</h2>
+                    <textarea name="c_code" placeholder="Enter C code here..." required>{{ c_code }}</textarea>
+                </div>
+                <div class="assembly-box">
+                    <h2>MIPS Assembly Code:</h2>
+                    <pre>{{ assembly_code }}</pre>
+                </div>
+            </div>
+            <button type="submit">Convert to MIPS</button>
+        </form>
+    </div>
+</body>
+</html>
