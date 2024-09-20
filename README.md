@@ -1,1 +1,1 @@
-# C-to-MIPS-assembly-converter-GUI-
+# C-to-MIPS-assembly-converter-GUI
